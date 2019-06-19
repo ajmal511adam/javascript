@@ -4,7 +4,7 @@
 	<title></title>
 	<script type="text/javascript">
 		function check_val(){
-			Vname=document.getElementsByClassName('quali');
+			// Vname=document.getElementsByClassName('quali');
 			GRADUATE_checked=document.getElementById('Qualification_GRADUATE').checked;
 			POSTGRADUATE_checked=document.getElementById('Qualification_POSTGRADUATE').checked;
 			msg_box=document.getElementsByClassName('message');
@@ -15,6 +15,8 @@
 				return false;
 			}
 			else{
+				msg_box[0].style.color="";
+				msg_box[1].style.color="";
 				return true;
 			}
 
@@ -27,8 +29,8 @@
 		<center>
 			<h1>Check Box Validation</h1><br><br>
 			<label>Qualification:</label>
-		<input type="checkbox" name="Qualification" value="MALE" id="Qualification_GRADUATE" class="quali"><span class="message">GRADUATE</span>
-		<input type="checkbox" name="Qualification" value="FEMALE" id="Qualification_POSTGRADUATE" class="quali"><span class="message">POST GRADUATE</span><br><br>
+		<input type="checkbox" name="Qualification" value="MALE" id="Qualification_GRADUATE"><span class="message">GRADUATE</span>
+		<input type="checkbox" name="Qualification" value="FEMALE" id="Qualification_POSTGRADUATE"><span class="message">POST GRADUATE</span><br><br>
 		<input type="button" name="btn" value="submit" onclick="check_val()"></center>
 	</form>
 
