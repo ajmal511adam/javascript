@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function formvalid(){
+			var name=document.getElementById('first_name').value;
+			alert(name);
+		}
+	</script>
+</head>
+<body>
+	<form>
+<label>First Name </label>
+<input type="text" name="first_name" id="first_name" value=""><br><br>
+<input type="button" name="btn" value="submit" onclick="formvalid()">
+<p id="print_name"></p>
+</form>
+</body>
+</html>

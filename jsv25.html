@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var pic_tracker="f";
+		function imagech(){
+			var pic=document.getElementById('facebook');
+			if(pic_tracker=="f"){
+			pic.src="logo_cyber.png";
+			pic_tracker="t";
+		}
+		else
+		{
+			pic.src="logo_baabtra.png";
+			pic_tracker="f";
+
+		}
+
+		}
+			</script>
+</head>
+<body>
+<img src="logo_baabtra.png" id="facebook" onclick="imagech()">
+</body>
+</html>
