@@ -10,27 +10,27 @@
 
 	<script type="text/javascript">
 			function marking(){
-			var mark=new Array(5);
-			mark[0]=55;
-			mark[1]=99;
-			mark[2]=59;
-			Arun=mark[0]+mark[1]+mark[2];
-			document.write("Mark for: Arun is "+mark[0]+","+mark[1]+","+mark[2]+"<br><br>");
-			document.write("Total is: "+Arun+"<br><br>");
-			var mark1=new Array(5);
-			mark1[0]=95;
-			mark1[1]=79;
-			mark1[2]=89;
-			Midhun=mark1[0]+mark1[1]+mark1[2];
-			document.write("Mark for: Midhun is "+mark1[0]+","+mark1[1]+","+mark1[2]+"<br><br>");
-			document.write("Total is: "+Midhun+"<br><br>");
-			Total=Arun-Midhun;
-			Total1=Midhun-Arun;
-			if(Arun>Midhun){
-				alert("Arun Got "+Total+" more mark than Midhun");
+			var first_student = prompt("Enter the Name of first Student");
+			var mark_Maths = Number(prompt("Enter the mark in Maths"));
+			var mark_English = Number(prompt("Enter the mark in English"));
+			var mark_Science = Number(prompt("Enter the mark in Science"));
+			first_total = mark_Maths + mark_English + mark_Science;
+			document.write("Mark for: " +first_student+ " is " +mark_Maths+ "," +mark_English+ "," +mark_Science+ "<br><br>");
+			document.write("Total is: "+first_total+"<br><br>");
+			var second_student = prompt("Enter the Name of second Student");
+			var mark_maths = Number(prompt("Enter the mark in Maths"));
+			var mark_english = Number(prompt("Enter the mark in English"));
+			var mark_science = Number(prompt("Enter the mark in Science"));
+			second_total = mark_maths + mark_english + mark_science;
+			document.write("Mark for: " +second_student+ " is " +mark_maths+ "," +mark_english+ "," +mark_science+ "<br><br>");
+			document.write("Total is: "+second_total+"<br><br>");
+			total_diff = first_total - second_total;
+			total_diffe = second_total - first_total;
+			if(first_total>second_total) {
+				alert(first_student+" got "+total_diff+" more mark than "+second_student);
 			} else {
 
-					alert("Midhun Got "+Total1+" more mark than Arun");
+					alert(second_student+" got "+total_diffe+" more mark than "+first_student);
 			}
 		}
 		marking();
