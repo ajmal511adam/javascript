@@ -7,14 +7,15 @@
 
 	<script type="text/javascript">
 			function marking(){
-			var mark=new Array(5);
-			mark[0]=95;
-			mark[1]=79;
-			mark[2]=89;
-			mark[3]=64;
-			mark[4]=55;
-			total=mark[0]+mark[1]+mark[2]+mark[3]+mark[4];
-			percent=(total/500)*100;
+			var mark = new Array(5);
+			mark[0] = 95;
+			mark[1] = 79;
+			mark[2] = 89;
+			mark[3] = 64;
+			mark[4] = 55;
+			total = mark[0] + mark[1] + mark[2] + mark[3] + mark[4];
+			percent = (total/500)*100;
+			document.write("Percentage of student is: "+percent)
 			if(percent>60){
 				alert("the student has passed the examination")
 			}
