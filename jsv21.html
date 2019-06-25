@@ -3,18 +3,19 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
+		n=Number(prompt("Enter the Number"));
 		function counters(){
-			n=9;
+			
 			
 			do{
 				document.write(" "+n);
 				n--;
-				if(n>10){
-				alert("expired");
-				}
+				
 			}
 			while(n>=0);
-				
+			if(n<0){
+				alert("expired");
+				}	
 			
 		}
 		counters();
